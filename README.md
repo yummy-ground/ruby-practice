@@ -62,4 +62,40 @@
       colors_b['red'] #=> 'ff0000'
      ```
 
+<br/>  
+
+## 변수 & 상수
+- `=` : 선언
+```ruby
+x = 2 
+puts x #=> 2
+
+x += 2
+puts x #=> 4
+
+x = 5
+puts x #=> 2
+
+x += 2
+puts x #=> 7
+```
+- **지역변수 / 전역변수 / 인스턴스 변수 / 클래스 변수** (Java와 개념 유사 - 둘 다 객체지향 언어)
+```ruby
+foo = 'foo is "local" variable'
+$foo = 'foo is "global" variable'
+@foo = 'foo is "instance" variable'
+@@foo = 'foo is "class" variable'
+```
+
 <br/>    
+
+## 연산자 (비교/산술/대입/논리)
+- `=`
+- `==` / `!=` / `<=` / `>=`
+- `&&` & `and`
+- `||` & `or`
+- `!` & `not`
+
+
+<br/>    
+
