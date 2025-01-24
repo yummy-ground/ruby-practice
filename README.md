@@ -99,3 +99,23 @@ $foo = 'foo is "global" variable'
 
 <br/>    
 
+----
+### ※ 참고
+- 영상
+  - [코딩 전도사 :: 5주만에 웹 어플리케이션 만들기(Ruby coin) 재생목록](https://www.youtube.com/watch?v=iNrT0O2_MQM&list=PLEBQPmkNcLCIE9ERi4k_nUkGgJoBizx6s)
+  - [Rajat Talesra :: Ruby on Rails 2024 - Airbnb Clone - Fullstack web development](https://www.youtube.com/watch?v=CFk87gt_4JM&list=PLoDt3UyLUtch1KR0U_UZ9GXJ5NRe-7BAh)
+  - [Rajat Talesra :: Rails API + React Fullstack Series](https://www.youtube.com/watch?v=O319tmmhrM8&list=PLoDt3UyLUtcjboxJVcObKvV_uNFeA8QCf)
+  - [GoRailsTV](https://www.youtube.com/@GorailsTV)
+- 아티클
+  - Rails - MVC
+    - [GeeksforGeeks :: Ruby on Rails - MVC](https://www.geeksforgeeks.org/ruby-on-rails-mvc/)
+    - [Medium :: Introduction to Ruby on Rails and how MVC works!!](https://medium.com/nerd-for-tech/introduction-to-ruby-on-rails-and-how-mvc-works-c56dff61dce5) 
+    - [DEV Community :: 🚀 Ruby on Rails: MVC and you!](https://dev.to/dumebii/model-view-controller-in-rails-a-deep-dive-into-the-mvc-architecture-4oi1)
+- 튜토리얼
+  - Ruby
+    - [try ruby](https://try.ruby-lang.org/) 
+    - [ruby-lang.org](https://www.ruby-lang.org/ko/documentation/)
+  - Rails
+    - [Rails :: Guides](https://guides.rubyonrails.org/index.html)
+      - [한국 버전](https://rubykr.github.io/rails_guides/index.html)
+    - [Tutorialspoint :: Ruby on Rails](https://www.tutorialspoint.com/ruby-on-rails/index.htm)
