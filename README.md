@@ -101,6 +101,7 @@ $foo = 'foo is "global" variable'
 
 ----
 ### ※ 참고
+> I'll practice ruby on rails by demo rails project! (see. [yummy-ground/ruby-on-rails-practice-project](https://github.com/yummy-ground/ruby-on-rails-practice-project))
 - 영상
   - [코딩 전도사 :: 5주만에 웹 어플리케이션 만들기(Ruby coin) 재생목록](https://www.youtube.com/watch?v=iNrT0O2_MQM&list=PLEBQPmkNcLCIE9ERi4k_nUkGgJoBizx6s)
   - [Rajat Talesra :: Ruby on Rails 2024 - Airbnb Clone - Fullstack web development](https://www.youtube.com/watch?v=CFk87gt_4JM&list=PLoDt3UyLUtch1KR0U_UZ9GXJ5NRe-7BAh)
