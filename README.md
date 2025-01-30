@@ -116,6 +116,7 @@ $foo = 'foo is "global" variable'
   - Ruby
     - [try ruby](https://try.ruby-lang.org/) 
     - [ruby-lang.org](https://www.ruby-lang.org/ko/documentation/)
+    - [ruby guides](https://www.rubyguides.com/)
   - Rails
     - [Rails :: Guides](https://guides.rubyonrails.org/index.html)
       - [한국 버전](https://rubykr.github.io/rails_guides/index.html)
