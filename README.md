@@ -96,8 +96,105 @@ $foo = 'foo is "global" variable'
 - `||` & `or`
 - `!` & `not`
 
-
 <br/>    
+
+## Class 활용
+일반적인 명명 레퍼런스와 선언 방법은 아래와 같다.
+- "**Class**" Name: **camel** 방식
+- "**Class File**" Name: **snake** 방식
+- "**Method**" Name : **snake** 방식
+- "**Constant**" Name : **Upper** Case + **snake** 방식
+```ruby
+# practice_member.rb
+class PracticeMemeber
+  CONSTANT_CLASS = ''
+  @@variable_class = ''
+
+  def initialize(var_instance)
+    @variable_instance = var_instance
+  end
+  
+  def print_instance_var 
+    puts @variable_instance
+  end
+  
+  def print_class_var
+    puts @@variable_class
+  end
+
+  def print_class_const
+    puts CONSTANT_CLASS
+  end
+end
+```
+
+<br/>
+
+### `attr_accessor` / `attr_reader` / `attr_writer`
+간단하게 Java/Spring 매커니즘에서 많이 사용하는 Lombok과 유사하다고 생각하면 된다.<br/>
+인스턴스의 변수들을 외부에서 제어할 있도록 도와주는 제어자 역할을 수행한다.
+- `attr_accessor` : 기본 Getter & Setter 생성
+- `attr_reader` : 기본 Getter 생성
+- `attr_writer` : 기본 Setter 생성
+
+**인스턴스 변수**는 **내부 메서드에서만 접근 가능**하기 때문에 외부에서 `(Instance).(Variable)` 방식으로 접근하면 `NoMethodError`가 발생한다.
+기존에 Getter/Setter 메서드를 직접 선언했던 불편함을 `attr_` 메서드를 통해 가독성과 코드 비용을 절감할 수 있다.
+```ruby
+# as-is
+class MemberA
+  def initialize(name)
+    @name = name
+  end
+  
+  def name 
+    @name
+  end
+  def name=(name)
+    @name = name
+  end
+end
+
+# to-be
+class MemberB
+  def initialize(name)
+    @name = name
+  end
+
+  attr_reader :name
+  attr_writer :name
+end
+
+member_a = MemberA.new('donggyu')
+member_b = MemberB.new('donggyu')
+
+member_a.name
+member_b.name
+
+member_a.name = "new donggyu"
+member_b.name = "new donggyu"
+```
+
+또한 **Class Variable**(`@@`)과 **Class Constant** 모두 `attr_` 설정이 가능하다.
+
+<br/>
+
+> `Kernel` 모듈에는 기본적으로 인스턴스에 대한 getter & setter 메서드를 override 하고 있다. <br/>
+> **string 타입** 혹은 `:{변수명}`으로 인스턴스 변수명을 파라미터로 주입하면 사용이 가능하다.
+> ```ruby
+> member_a.instance_variable_get("@name")
+> member_a.instance_variable_get(:name)
+> 
+> member_a.instance_variable_set("@name", "new name")
+> member_a.instance_variable_set(:name, "new name")
+> 
+> member_a.instance_variable_defined?("@name") #=> true
+> member_a.instance_variable_defined?(:name) #=> true
+> member_a.instance_variable_defined?("@age") #=> false
+> ```
+> 🚨 꼭 **Kernel 모듈**을 공부해보도록 하자. 🚨 <br/>
+> 그 외에도 다양한 라이브러리를 공부하면 좋을 것 같다 (`rbenv` & `rbs`) 
+
+<br/>
 
 ----
 ### ※ 참고
